@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f0f0f"/>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="asset/icon-192.png" type="image/png" />
+  <title>AI Powered Gym Trainer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <img src="asset/logo.png" alt="Logo" class="logo" />
+    <h1>AI Powered Gym Trainer</h1>
+    <p>Train Smart. Train AI.</p>
+  </header>
+
+  <section class="features">
+    <h2>🚀 Features</h2>
+    <div class="feature-grid">
+      <div class="card">Real-Time Feedback</div>
+      <div class="card">Custom Workout Plans</div>
+      <div class="card">Progress Analytics</div>
+    </div>
+  </section>
+
+  <section class="hero">
+    <h2>Your Personal AI Gym Companion</h2>
+    <p>Smarter workouts, better results. Anytime, anywhere.</p>
+    <button onclick="runAIDemo()">Launch AI Trainer</button>
+  </section>
+  
+
+  <section class="demo">
+    <h2>🤖 AI Demo</h2>
+    <p>Future: Pose Detection & Smart Trainer AI</p>
+    <button onclick="runAIDemo()">Try AI Trainer</button>
+  </section>
+
+  <section class="contact">
+    <h2>📩 Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AI Gym Trainer. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js').then(() => {
+        console.log('Service Worker Registered');
+      });
+    }
+  </script>
+</body>
+</html>
